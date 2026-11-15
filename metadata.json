@@ -1,0 +1,6 @@
+{
+  "name": "Saeth Sport Sialkot",
+  "description": "Premium High-Performance Animated Sportswear Website for Saeth Sport Sialkot",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

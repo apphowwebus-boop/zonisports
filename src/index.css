@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-condensed: "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Crisp Pure White Studio Palette matched to Zoni Sport Product Photography */
+  --color-canvas: #FFFFFF;
+  --color-surface: #F8F9FA;
+  --color-surface-muted: #F1F3F5;
+  --color-ink: #111827;
+  --color-ink-secondary: #4B5563;
+  --color-ink-muted: #6B7280;
+
+  --color-border-hairline: #E5E7EB;
+  --color-border-strong: #D1D5DB;
+
+  --color-slate-brand: #1E293B;
+  --color-accent: #C2410C;
+  --color-accent-hover: #9A3412;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F9FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1E293B;
+}
