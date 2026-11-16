@@ -40,7 +40,7 @@ export default function ProductDetailsModal({
   const handleWhatsAppInquiry = () => {
     if (!product) return;
     const text = encodeURIComponent(
-      `Assalam o Alaikum ZONI SPORT (@zonisport2021)! I am interested in this item from your catalog: ${product.name}`
+      `Assalam o Alaikum ZONI SPORTS WEAR (@zonisport2021)! I am interested in this item from your catalog: ${product.name}`
     );
     window.open(`https://wa.me/${ZONI_WHATSAPP_NUMBER}?text=${text}`, "_blank");
   };
@@ -124,7 +124,7 @@ export default function ProductDetailsModal({
 
               <button
                 onClick={handleWhatsAppInquiry}
-                className="px-5 py-2.5 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white font-display font-bold text-xs uppercase tracking-wider transition-colors inline-flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap shrink-0"
+                className="px-5 py-2.5 rounded-lg bg-accent hover:bg-accent-hover text-white font-display font-bold text-xs uppercase tracking-wider transition-colors inline-flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap shrink-0"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Inquire on WhatsApp</span>

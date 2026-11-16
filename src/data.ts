@@ -1,53 +1,46 @@
 import { Product, Category } from "./types";
 
-import maleSlateHoodieSet from "./assets/images/zoni_male_slate_hoodie_set_1794775370482.jpg";
-import maleWaffleCaramel from "./assets/images/zoni_male_waffle_caramel_1794775371290.jpg";
-import femaleBurgundyActivewear from "./assets/images/zoni_female_burgundy_activewear_1794775370108.jpg";
-import femaleBlushTracksuit from "./assets/images/zoni_female_blush_tracksuit_1794775371734.jpg";
-import maleVarsityBlackAmber from "./assets/images/zoni_male_varsity_black_amber_1794775372729.jpg";
-import femaleVarsityMagenta from "./assets/images/zoni_female_varsity_magenta_1794775372882.jpg";
-import maleEmeraldTracksuit from "./assets/images/zoni_male_emerald_tracksuit_1794775373249.jpg";
-import malePoloBlackCrimson from "./assets/images/zoni_male_polo_black_crimson_1794775373357.jpg";
-import femaleEspressoCoord from "./assets/images/zoni_female_espresso_coord_1794775374746.jpg";
-import femaleLavenderHoodie from "./assets/images/zoni_female_lavender_hoodie_1794775374838.jpg";
-import maleCobaltKit from "./assets/images/zoni_male_cobalt_kit_1794775376242.jpg";
-import femaleWhiteGymSet from "./assets/images/zoni_female_white_gym_set_1794775376026.jpg";
-import oemFactoryStudio from "./assets/images/zoni_oem_factory_studio_1794775377045.jpg";
-import bulkHoodiesShowroom from "./assets/images/zoni_bulk_hoodies_showroom_1794775377089.jpg";
-import heroHoodiesBanner from "./assets/images/zoni_hero_hoodies_1794774732215.jpg";
-import heroVarsityBanner from "./assets/images/zoni_hero_varsity_1794774732565.jpg";
-import heroActivewearBanner from "./assets/images/zoni_hero_activewear_1794774733620.jpg";
+import heroMaleStreetwear from "./assets/images/zoni_hero_male_streetwear_1794861705554.jpg";
+import heroFemaleFitness from "./assets/images/zoni_hero_female_fitness_1794861705996.jpg";
+import heroDuoCampaign from "./assets/images/zoni_hero_duo_campaign_1794861705212.jpg";
+
+import prodMaleBlackRedHoodie from "./assets/images/zoni_prod_male_black_red_hoodie_1794861707711.jpg";
+import prodMaleRedVarsity from "./assets/images/zoni_prod_male_red_varsity_1794861706925.jpg";
+import prodFemaleBlackCrimsonGym from "./assets/images/zoni_prod_female_black_crimson_gym_1794861708144.jpg";
+import prodFemaleRedTracksuit from "./assets/images/zoni_prod_female_red_tracksuit_1794861708895.jpg";
+import prodMaleStreetOversized from "./assets/images/zoni_prod_male_street_oversized_1794861709761.jpg";
+import prodFemaleVarsityBlackRed from "./assets/images/zoni_prod_female_varsity_black_red_1794861709439.jpg";
+import prodMaleTricotTracksuit from "./assets/images/zoni_prod_male_tricot_tracksuit_1794861709945.jpg";
+import prodFemaleWhiteRedActive from "./assets/images/zoni_prod_female_white_red_active_1794861712554.jpg";
+import prodMalePoloRedBlack from "./assets/images/zoni_prod_male_polo_red_black_1794861711799.jpg";
+import prodMaleTeamKitRedBlack from "./assets/images/zoni_prod_male_team_kit_red_black_1794861712195.jpg";
+import factoryRedBlackEmbroidery from "./assets/images/zoni_factory_red_black_embroidery_1794861711599.jpg";
 
 export const ZONI_INSTAGRAM_URL = "https://www.instagram.com/zonisport2021/?hl=en";
 export const ZONI_WHATSAPP_NUMBER = "923000000000";
 
 export const LOOKBOOK_MEDIA = {
-  menFeatured: maleWaffleCaramel,
-  menSecondary: maleCobaltKit,
-  womenFeatured: femaleBurgundyActivewear,
-  womenSecondary: femaleBlushTracksuit,
-  showroom: bulkHoodiesShowroom,
-  embroidery: oemFactoryStudio,
-  heroActivewear: heroActivewearBanner,
-  heroHoodies: heroHoodiesBanner,
-  heroVarsity: heroVarsityBanner
+  menFeatured: prodMaleStreetOversized,
+  menSecondary: prodMaleTeamKitRedBlack,
+  womenFeatured: prodFemaleBlackCrimsonGym,
+  womenSecondary: prodFemaleRedTracksuit
 };
 
 export const ZONI_CRAFT_STAGES = [
   {
-    step: "01. Custom Logo & Embroidery",
-    image: oemFactoryStudio,
-    desc: "High-density chest embroidery, chenille patches & private labels."
+    step: "01. Custom Zoni Crest Embroidery",
+    image: factoryRedBlackEmbroidery,
+    desc: "Multi-head Tajima stitching of custom brand crests on red & black fleece."
   },
   {
-    step: "02. Custom Colorways & Fleece",
-    image: bulkHoodiesShowroom,
-    desc: "Heavyweight 380–450 GSM cotton fleece tailored in Sialkot."
+    step: "02. Coordinated Men & Women Lines",
+    image: heroDuoCampaign,
+    desc: "Matched streetwear hoodies, tracksuits, varsity jackets & gym sets."
   },
   {
-    step: "03. Export Finish & Worldwide Dispatch",
-    image: heroActivewearBanner,
-    desc: "Bulk production & air cargo delivery for global activewear brands."
+    step: "03. Athletic Performance Studio",
+    image: heroFemaleFitness,
+    desc: "High-stretch gym wear & export-grade bulk manufacturing worldwide."
   }
 ];
 
@@ -55,53 +48,53 @@ export const DEPARTMENT_CARDS: Category[] = [
   {
     id: "hoodies",
     sportId: "hoodies",
-    name: "Custom Hoodies",
+    name: "Streetwear & Hoodies",
     nameUrdu: "",
-    description: "Heavyweight fleece & waffle sets",
-    count: 4,
-    image: maleSlateHoodieSet
+    description: "Red & black fleece sets with Zoni crest",
+    count: 3,
+    image: prodMaleBlackRedHoodie
   },
   {
     id: "activewear",
     sportId: "activewear",
-    name: "Women's Activewear",
+    name: "Gym & Fitness Wear",
     nameUrdu: "",
-    description: "Seamless compression gym co-ords",
+    description: "Seamless sports bras & compression leggings",
     count: 3,
-    image: femaleBurgundyActivewear
+    image: prodFemaleBlackCrimsonGym
   },
   {
     id: "varsity-jackets",
     sportId: "varsity-jackets",
     name: "Varsity & Outerwear",
     nameUrdu: "",
-    description: "Chenille wool & contrast bombers",
+    description: "Crimson & black letterman bombers",
     count: 2,
-    image: maleVarsityBlackAmber
+    image: prodMaleRedVarsity
   },
   {
     id: "tracksuits",
     sportId: "tracksuits",
-    name: "Tracksuits & Team Kits",
+    name: "Sports Tracksuits & Kits",
     nameUrdu: "",
-    description: "Striped tricot & fleece sets",
+    description: "Full-zip tricot & matchday kits",
     count: 4,
-    image: maleEmeraldTracksuit
+    image: prodMaleTricotTracksuit
   }
 ];
 
 export const PRODUCTS: Product[] = [
   {
-    id: "zoni-male-slate-hoodie-set",
-    name: "Slate & Rust Lined Fleece Hoodie Set",
-    description: "Redesigned Zoni Sport signature heavyweight slate-navy pullover hoodie with contrast burnt-orange hood lining and tapered joggers.",
+    id: "zoni-male-black-red-hoodie",
+    name: "Black & Crimson Zoni Fleece Hoodie Set",
+    description: "Heavyweight jet-black cotton fleece hoodie with crimson hood lining and Zoni chest & thigh embroidery.",
     sport: "hoodies",
     gender: "men",
     productType: "tracksuit",
     category: "hoodies",
     price: 0,
-    image: maleSlateHoodieSet,
-    secondaryImage: heroHoodiesBanner,
+    image: prodMaleBlackRedHoodie,
+    secondaryImage: heroMaleStreetwear,
     sizes: [],
     features: [],
     rating: 5.0,
@@ -110,16 +103,16 @@ export const PRODUCTS: Product[] = [
     inStock: true
   },
   {
-    id: "zoni-female-burgundy-activewear",
-    name: "Burgundy Seamless Bra & Legging Set",
-    description: "4-way stretch high-compression seamless gym sports bra and high-waisted sculpted leggings in deep wine burgundy.",
+    id: "zoni-female-black-crimson-gym",
+    name: "Black & Crimson Zoni Seamless Gym Set",
+    description: "Sculpted matte black sports bra and high-rise compression leggings finished with crimson contour piping and Zoni logo.",
     sport: "activewear",
     gender: "women",
     productType: "activewear",
     category: "activewear",
     price: 0,
-    image: femaleBurgundyActivewear,
-    secondaryImage: femaleWhiteGymSet,
+    image: prodFemaleBlackCrimsonGym,
+    secondaryImage: heroFemaleFitness,
     sizes: [],
     features: [],
     rating: 5.0,
@@ -128,52 +121,16 @@ export const PRODUCTS: Product[] = [
     inStock: true
   },
   {
-    id: "zoni-male-waffle-caramel-set",
-    name: "Cream Waffle & Caramel Suede Hoodie Set",
-    description: "Textured waffle-knit pullover hoodie featuring caramel suede shoulder and elbow panels paired with matching cargo waffle joggers.",
-    sport: "hoodies",
-    gender: "men",
-    productType: "tracksuit",
-    category: "hoodies",
-    price: 0,
-    image: maleWaffleCaramel,
-    secondaryImage: maleSlateHoodieSet,
-    sizes: [],
-    features: [],
-    rating: 5.0,
-    reviewsCount: 0,
-    isCustomizable: true,
-    inStock: true
-  },
-  {
-    id: "zoni-female-blush-tracksuit",
-    name: "Blush Cropped Zip Hoodie & Jogger Set",
-    description: "Soft blush-pink cropped full-zip fleece jacket paired with relaxed high-rise cuffed joggers.",
-    sport: "tracksuits",
-    gender: "women",
-    productType: "tracksuit",
-    category: "tracksuits",
-    price: 0,
-    image: femaleBlushTracksuit,
-    secondaryImage: femaleEspressoCoord,
-    sizes: [],
-    features: [],
-    rating: 5.0,
-    reviewsCount: 0,
-    isCustomizable: true,
-    inStock: true
-  },
-  {
-    id: "zoni-male-varsity-black-amber",
-    name: "Black & Amber Leather-Sleeve Varsity Jacket",
-    description: "Heavyweight black Melton wool-body varsity letterman jacket with mustard-amber sleeves, striped ribbing, and Z chest crest.",
+    id: "zoni-male-red-varsity",
+    name: "Crimson & Black Zoni Leather Varsity Jacket",
+    description: "Melton wool crimson varsity letterman jacket with jet-black sleeves and embroidered Zoni crest.",
     sport: "varsity-jackets",
     gender: "men",
     productType: "jacket",
     category: "varsity-jackets",
     price: 0,
-    image: maleVarsityBlackAmber,
-    secondaryImage: heroVarsityBanner,
+    image: prodMaleRedVarsity,
+    secondaryImage: prodFemaleVarsityBlackRed,
     sizes: [],
     features: [],
     rating: 5.0,
@@ -182,16 +139,52 @@ export const PRODUCTS: Product[] = [
     inStock: true
   },
   {
-    id: "zoni-female-varsity-magenta",
-    name: "Magenta & White Varsity Bomber Set",
-    description: "Vibrant magenta and crisp white snap-front varsity bomber jacket styled with matching athletic joggers.",
+    id: "zoni-female-red-tracksuit",
+    name: "Crimson Zip Hoodie & Black Jogger Tracksuit",
+    description: "Cropped crimson full-zip fleece jacket paired with red-piped black joggers stamped with Zoni branding.",
+    sport: "tracksuits",
+    gender: "women",
+    productType: "tracksuit",
+    category: "tracksuits",
+    price: 0,
+    image: prodFemaleRedTracksuit,
+    secondaryImage: heroDuoCampaign,
+    sizes: [],
+    features: [],
+    rating: 5.0,
+    reviewsCount: 0,
+    isCustomizable: true,
+    inStock: true
+  },
+  {
+    id: "zoni-male-street-oversized",
+    name: "Charcoal Oversized Zoni Streetwear Set",
+    description: "Boxy drop-shoulder fleece hoodie featuring oversized Zoni Sports Wear chest print and wide-leg sweatpants.",
+    sport: "hoodies",
+    gender: "men",
+    productType: "tracksuit",
+    category: "hoodies",
+    price: 0,
+    image: prodMaleStreetOversized,
+    secondaryImage: prodMaleBlackRedHoodie,
+    sizes: [],
+    features: [],
+    rating: 5.0,
+    reviewsCount: 0,
+    isCustomizable: true,
+    inStock: true
+  },
+  {
+    id: "zoni-female-varsity-black-red",
+    name: "Jet-Black & Crimson Varsity Bomber Set",
+    description: "Black varsity jacket with satin crimson sleeves, striped ribbed trim, and Zoni chest emblem.",
     sport: "varsity-jackets",
     gender: "women",
     productType: "jacket",
     category: "varsity-jackets",
     price: 0,
-    image: femaleVarsityMagenta,
-    secondaryImage: heroVarsityBanner,
+    image: prodFemaleVarsityBlackRed,
+    secondaryImage: heroDuoCampaign,
     sizes: [],
     features: [],
     rating: 5.0,
@@ -200,16 +193,16 @@ export const PRODUCTS: Product[] = [
     inStock: true
   },
   {
-    id: "zoni-male-emerald-tracksuit",
-    name: "Forest Emerald Triple-Stripe Tracksuit",
-    description: "Deep forest emerald full-zip poly-tricot athletic tracksuit with crisp white shoulder and leg stripes.",
+    id: "zoni-male-tricot-tracksuit",
+    name: "Black & Crimson Triple-Stripe Tricot Tracksuit",
+    description: "Full-zip black poly-tricot athletic tracksuit with red-and-white sleeve & leg stripes and Zoni chest crest.",
     sport: "tracksuits",
     gender: "men",
     productType: "tracksuit",
     category: "tracksuits",
     price: 0,
-    image: maleEmeraldTracksuit,
-    secondaryImage: heroVarsityBanner,
+    image: prodMaleTricotTracksuit,
+    secondaryImage: heroMaleStreetwear,
     sizes: [],
     features: [],
     rating: 5.0,
@@ -218,88 +211,88 @@ export const PRODUCTS: Product[] = [
     inStock: true
   },
   {
-    id: "zoni-female-espresso-coord",
-    name: "Espresso Oversized Zip Fleece Co-ord",
-    description: "Rich chocolate espresso full-zip fleece hoodie and matching wide-leg lounge sweatpants.",
-    sport: "tracksuits",
-    gender: "women",
-    productType: "tracksuit",
-    category: "tracksuits",
-    price: 0,
-    image: femaleEspressoCoord,
-    secondaryImage: femaleBlushTracksuit,
-    sizes: [],
-    features: [],
-    rating: 5.0,
-    reviewsCount: 0,
-    isCustomizable: true,
-    inStock: true
-  },
-  {
-    id: "zoni-male-polo-black-crimson",
-    name: "Black & Crimson Raglan Performance Polo",
-    description: "Moisture-wicking black and crimson shoulder-panel club polo with white collar tipping and training shorts.",
-    sport: "polos-teamwear",
-    gender: "men",
-    productType: "teamwear",
-    category: "polos-teamwear",
-    price: 0,
-    image: malePoloBlackCrimson,
-    secondaryImage: heroActivewearBanner,
-    sizes: [],
-    features: [],
-    rating: 5.0,
-    reviewsCount: 0,
-    isCustomizable: true,
-    inStock: true
-  },
-  {
-    id: "zoni-female-lavender-hoodie",
-    name: "Lilac Lavender Fleece Pullover Hoodie",
-    description: "Pastel lilac heavyweight brushed cotton fleece hoodie paired with optic-white cuffed joggers.",
-    sport: "hoodies",
-    gender: "women",
-    productType: "hoodie",
-    category: "hoodies",
-    price: 0,
-    image: femaleLavenderHoodie,
-    secondaryImage: bulkHoodiesShowroom,
-    sizes: [],
-    features: [],
-    rating: 5.0,
-    reviewsCount: 0,
-    isCustomizable: true,
-    inStock: true
-  },
-  {
-    id: "zoni-male-cobalt-kit",
-    name: "Cobalt Mesh Training Jersey & Pant Kit",
-    description: "Breathable cobalt blue hexagonal micro-mesh training jersey with black tapered performance track pants.",
-    sport: "polos-teamwear",
-    gender: "men",
-    productType: "teamwear",
-    category: "polos-teamwear",
-    price: 0,
-    image: maleCobaltKit,
-    secondaryImage: heroActivewearBanner,
-    sizes: [],
-    features: [],
-    rating: 5.0,
-    reviewsCount: 0,
-    isCustomizable: true,
-    inStock: true
-  },
-  {
-    id: "zoni-female-white-gym-set",
-    name: "Optic White Bra & Navy Sculpt Leggings",
-    description: "Seamless optic white racerback sports bra styled with high-rise deep navy compression leggings.",
+    id: "zoni-female-white-red-active",
+    name: "Optic White & Crimson Fitness Bra Set",
+    description: "White racerback seamless sports bra displaying the Zoni red-and-black crest paired with crimson-trimmed leggings.",
     sport: "activewear",
     gender: "women",
     productType: "activewear",
     category: "activewear",
     price: 0,
-    image: femaleWhiteGymSet,
-    secondaryImage: femaleBurgundyActivewear,
+    image: prodFemaleWhiteRedActive,
+    secondaryImage: prodFemaleBlackCrimsonGym,
+    sizes: [],
+    features: [],
+    rating: 5.0,
+    reviewsCount: 0,
+    isCustomizable: true,
+    inStock: true
+  },
+  {
+    id: "zoni-male-polo-red-black",
+    name: "Black & Crimson Raglan Zoni Team Polo",
+    description: "Moisture-wicking black and crimson raglan performance polo shirt with white collar tipping and Zoni embroidery.",
+    sport: "polos-teamwear",
+    gender: "men",
+    productType: "teamwear",
+    category: "polos-teamwear",
+    price: 0,
+    image: prodMalePoloRedBlack,
+    secondaryImage: prodMaleTeamKitRedBlack,
+    sizes: [],
+    features: [],
+    rating: 5.0,
+    reviewsCount: 0,
+    isCustomizable: true,
+    inStock: true
+  },
+  {
+    id: "zoni-male-team-kit-red-black",
+    name: "Scarlet Geometric Sublimated Team Kit",
+    description: "Breathable scarlet and black geometric training jersey and tapered track pants branded with Zoni Sports Wear.",
+    sport: "polos-teamwear",
+    gender: "men",
+    productType: "teamwear",
+    category: "polos-teamwear",
+    price: 0,
+    image: prodMaleTeamKitRedBlack,
+    secondaryImage: prodMalePoloRedBlack,
+    sizes: [],
+    features: [],
+    rating: 5.0,
+    reviewsCount: 0,
+    isCustomizable: true,
+    inStock: true
+  },
+  {
+    id: "zoni-hero-capsule-men",
+    name: "Zoni Pro Raglan Streetwear Tracksuit",
+    description: "Black and crimson paneled streetwear tracksuit featuring bold chest Zoni Sports Wear print.",
+    sport: "hoodies",
+    gender: "men",
+    productType: "tracksuit",
+    category: "hoodies",
+    price: 0,
+    image: heroMaleStreetwear,
+    secondaryImage: prodMaleBlackRedHoodie,
+    sizes: [],
+    features: [],
+    rating: 5.0,
+    reviewsCount: 0,
+    isCustomizable: true,
+    inStock: true
+  },
+  {
+    id: "zoni-hero-capsule-women",
+    name: "Zoni Cropped Track Jacket & Gym Co-ord",
+    description: "3-piece matte black & crimson cropped zip track jacket, seamless sports bra, and high-rise leggings.",
+    sport: "activewear",
+    gender: "women",
+    productType: "activewear",
+    category: "activewear",
+    price: 0,
+    image: heroFemaleFitness,
+    secondaryImage: prodFemaleBlackCrimsonGym,
     sizes: [],
     features: [],
     rating: 5.0,

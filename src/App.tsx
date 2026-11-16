@@ -197,20 +197,20 @@ export default function App() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.4 }}
-            className="bg-white rounded-2xl border border-border-hairline p-7 sm:p-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6 shadow-xs"
+            className="bg-slate-brand text-white rounded-2xl border border-black/15 p-7 sm:p-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6 shadow-md"
           >
             <div className="max-w-2xl">
               <p className="font-mono text-[11px] font-bold tracking-[0.18em] text-accent uppercase mb-2">
-                Worldwide Air Shipping · Sialkot
+                ZONI SPORTS WEAR · Manufacturer &amp; Supplier
               </p>
               <h2
-                className="font-condensed font-extrabold text-3xl sm:text-4xl uppercase tracking-wide text-ink"
+                className="font-condensed font-extrabold text-3xl sm:text-4xl uppercase tracking-wide text-white"
                 style={{ textWrap: "balance" }}
               >
                 Launch Your Brand or <span className="text-accent">Bulk Order</span>
               </h2>
-              <p className="font-sans text-sm text-ink-secondary mt-2">
-                Send your logo or select any design from our catalog for custom sampling and worldwide factory dispatch.
+              <p className="font-sans text-sm text-zinc-300 mt-2">
+                Send your logo or select any sports, street, or gym wear design from our catalog for worldwide dispatch.
               </p>
             </div>
 
@@ -228,7 +228,7 @@ export default function App() {
                 href={ZONI_INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-3 rounded-lg border border-border-strong bg-white hover:bg-surface-muted text-ink font-display font-bold text-xs uppercase tracking-wider transition-colors inline-flex items-center gap-1.5 whitespace-nowrap"
+                className="px-5 py-3 rounded-lg border border-white/25 bg-white/10 hover:bg-white hover:text-ink text-white font-display font-bold text-xs uppercase tracking-wider transition-colors inline-flex items-center gap-1.5 whitespace-nowrap"
               >
                 <span>Instagram @zonisport2021</span>
                 <ArrowUpRight className="w-4 h-4" />
@@ -238,22 +238,22 @@ export default function App() {
         </div>
       </section>
 
-      {/* Clean White Footer with ZONI SPORT Logo */}
-      <footer id="zoni-footer" className="bg-white text-ink py-10">
+      {/* Bold Jet-Black & Crimson Red Footer with Official ZONI SPORTS WEAR Logo */}
+      <footer id="zoni-footer" className="bg-slate-brand text-white py-10 border-t-2 border-accent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-          <div className="flex flex-col gap-2">
-            <ZoniLogo variant="header" />
-            <p className="font-mono text-[11px] text-ink-muted">
-              Custom Hoodies &amp; Activewear Manufacturer · Sialkot · Worldwide Shipping
+          <div className="flex flex-col gap-2.5">
+            <ZoniLogo variant="light" />
+            <p className="font-mono text-[11px] text-zinc-400">
+              ZONI SPORTS WEAR · Sports, Street &amp; Gym Wear Manufacturer · Sialkot
             </p>
           </div>
 
-          <div className="flex items-center gap-6 text-xs font-display font-bold uppercase tracking-wider text-ink-secondary">
+          <div className="flex items-center gap-6 text-xs font-display font-bold uppercase tracking-wider text-zinc-300">
             <a
               href={ZONI_INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-accent underline underline-offset-4"
+              className="hover:text-accent underline underline-offset-4 transition-colors"
             >
               Instagram @zonisport2021
             </a>
@@ -261,7 +261,7 @@ export default function App() {
               href={`https://wa.me/${ZONI_WHATSAPP_NUMBER}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-accent underline underline-offset-4"
+              className="hover:text-accent underline underline-offset-4 transition-colors"
             >
               WhatsApp Order
             </a>
