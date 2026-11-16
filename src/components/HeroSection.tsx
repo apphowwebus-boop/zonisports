@@ -218,8 +218,9 @@ export default function HeroSection({
               <motion.img
                 src={slide.image}
                 alt={slide.alt}
+                draggable={false}
                 style={{ y: imageParallaxY, scale: imageParallaxScale }}
-                className="w-full h-full object-cover object-top will-change-transform"
+                className="w-full h-full object-cover object-top will-change-transform select-none pointer-events-none"
                 referrerPolicy="no-referrer"
               />
             </motion.div>

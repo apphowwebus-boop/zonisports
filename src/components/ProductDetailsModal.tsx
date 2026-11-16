@@ -88,7 +88,8 @@ export default function ProductDetailsModal({
                 <img
                   src={activeImage || product.image}
                   alt={product.name}
-                  className="w-full h-full object-contain bg-white"
+                  draggable={false}
+                  className="w-full h-full object-contain bg-white select-none pointer-events-none"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-3 left-3" style={{ transform: "translateZ(20px)" }}>
@@ -106,7 +107,13 @@ export default function ProductDetailsModal({
                     (activeImage || product.image) === product.image ? "border-accent ring-2 ring-accent" : "border-border-hairline"
                   }`}
                 >
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    draggable={false}
+                    className="w-full h-full object-cover select-none pointer-events-none"
+                    referrerPolicy="no-referrer"
+                  />
                 </button>
                 <button
                   onClick={() => setActiveImage(product.secondaryImage!)}
@@ -114,7 +121,13 @@ export default function ProductDetailsModal({
                     activeImage === product.secondaryImage ? "border-accent ring-2 ring-accent" : "border-border-hairline"
                   }`}
                 >
-                  <img src={product.secondaryImage} alt={product.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <img
+                    src={product.secondaryImage}
+                    alt={product.name}
+                    draggable={false}
+                    className="w-full h-full object-cover select-none pointer-events-none"
+                    referrerPolicy="no-referrer"
+                  />
                 </button>
               </div>
             )}

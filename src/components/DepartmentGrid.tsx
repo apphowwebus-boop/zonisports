@@ -55,7 +55,8 @@ export default function DepartmentGrid({ onSelectDepartment }: DepartmentGridPro
                 <img
                   src={dept.image}
                   alt={dept.name}
-                  className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-[1.06]"
+                  draggable={false}
+                  className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-[1.06] select-none pointer-events-none"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-2.5 left-2.5">

@@ -19,7 +19,8 @@ export default function ZoniLogo({
         <img
           src={zoniLogoImg}
           alt="ZONI SPORTS WEAR"
-          className="h-5 w-auto object-contain"
+          draggable={false}
+          className="h-5 w-auto object-contain select-none pointer-events-none"
           referrerPolicy="no-referrer"
         />
       </div>
@@ -34,7 +35,8 @@ export default function ZoniLogo({
         <img
           src={zoniLogoImg}
           alt="ZONI SPORTS WEAR — Manufacturer & Supplier"
-          className="h-10 sm:h-11 w-auto object-contain"
+          draggable={false}
+          className="h-10 sm:h-11 w-auto object-contain select-none pointer-events-none"
           referrerPolicy="no-referrer"
         />
       </div>
@@ -46,7 +48,8 @@ export default function ZoniLogo({
       <img
         src={zoniLogoImg}
         alt="ZONI SPORTS WEAR — Manufacturer & Supplier"
-        className="h-11 sm:h-12 w-auto object-contain"
+        draggable={false}
+        className="h-11 sm:h-12 w-auto object-contain select-none pointer-events-none"
         referrerPolicy="no-referrer"
       />
     </div>

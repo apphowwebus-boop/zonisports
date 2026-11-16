@@ -59,8 +59,9 @@ export default function ProductCard({ product, onSelect, index = 0 }: ProductCar
             <img
               src={currentSrc}
               alt={product.name}
+              draggable={false}
               onError={() => setImgError(true)}
-              className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-[1.05]"
+              className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-[1.05] select-none pointer-events-none"
               referrerPolicy="no-referrer"
             />
           ) : (

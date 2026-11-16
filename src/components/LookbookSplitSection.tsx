@@ -62,7 +62,8 @@ export default function LookbookSplitSection({ onSelectGender }: LookbookSplitSe
                 <img
                   src={LOOKBOOK_MEDIA.menFeatured}
                   alt="Men's Waffle Caramel Hoodie Set"
-                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  draggable={false}
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-2.5 left-2.5">
@@ -73,7 +74,8 @@ export default function LookbookSplitSection({ onSelectGender }: LookbookSplitSe
                 <img
                   src={LOOKBOOK_MEDIA.menSecondary}
                   alt="Men's Cobalt Training Jersey and Track Pant Kit"
-                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  draggable={false}
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none"
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -109,7 +111,8 @@ export default function LookbookSplitSection({ onSelectGender }: LookbookSplitSe
                 <img
                   src={LOOKBOOK_MEDIA.womenFeatured}
                   alt="Women's Burgundy Seamless Sports Bra and Legging Set"
-                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  draggable={false}
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-2.5 left-2.5">
@@ -120,7 +123,8 @@ export default function LookbookSplitSection({ onSelectGender }: LookbookSplitSe
                 <img
                   src={LOOKBOOK_MEDIA.womenSecondary}
                   alt="Women's Blush Cropped Hoodie and Jogger Set"
-                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  draggable={false}
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none"
                   referrerPolicy="no-referrer"
                 />
               </div>

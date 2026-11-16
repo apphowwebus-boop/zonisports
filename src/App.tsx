@@ -10,6 +10,7 @@ import ProductCard from "./components/ProductCard";
 import LookbookSplitSection from "./components/LookbookSplitSection";
 import ProductDetailsModal from "./components/ProductDetailsModal";
 import ZoniLogo from "./components/ZoniLogo";
+import ContentProtection from "./components/ContentProtection";
 
 export default function App() {
   const [selectedSport, setSelectedSport] = useState<SportId>("all");
@@ -53,7 +54,12 @@ export default function App() {
   ];
 
   return (
-    <div id="zoni-sport-catalog" className="min-h-screen bg-white text-ink font-sans overflow-x-hidden">
+    <div
+      id="zoni-sport-catalog"
+      className="min-h-screen bg-white text-ink font-sans overflow-x-hidden select-none"
+    >
+      <ContentProtection />
+
       <motion.div
         style={{ scaleX }}
         className="fixed top-0 left-0 right-0 h-[3px] bg-accent origin-left z-50 pointer-events-none"
@@ -172,7 +178,8 @@ export default function App() {
                   <img
                     src={stage.image}
                     alt={stage.step}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    draggable={false}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 select-none pointer-events-none"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute top-2.5 left-2.5">
